@@ -1,0 +1,29 @@
+     .stars-outer {
+         position: relative;
+         display: inline-block;
+     }
+     
+     .stars-inner {
+         position: absolute;
+         top: 0;
+         left: 0;
+         white-space: nowrap;
+         overflow: hidden;
+         width: 0;
+     }
+
+     /* This renders the stars rating. */
+     .stars-outer::before {
+         content: "\f005 \f005 \f005 \f005 \f005";
+         font-family: 'font Awesome 5 Free';
+         font-weight: 900;
+         color: #ccc;
+     }
+
+     /* This fills the stars with yellow. */
+     .stars-inner::before {
+         content: "\f005 \f005 \f005 \f005 \f005";
+         font-family: 'font Awesome 5 Free';
+         font-weight: 900;
+         color: #f8da47;
+     }
